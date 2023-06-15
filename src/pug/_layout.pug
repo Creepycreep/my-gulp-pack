@@ -1,0 +1,21 @@
+block variables
+  - var title = 'Document'
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{title}
+    link(rel="stylesheet", href="css/style.min.css")
+  body 
+    block header
+      header.header 
+        h1 Hello world
+    block content
+      main.main 
+        p It's main content
+    block footer
+      footer.footer 
+        p Bye
+    script(src="js/main.min.js") 
