@@ -114,5 +114,5 @@ exports.images = images;
 exports.sprite = sprite;
 exports.deploy = deploy;
 
-exports.build = series(cleanDist, building);
+exports.build = series(cleanDist, building, deploy);
 exports.default = parallel(images, pug, styles, scripts, watching);
